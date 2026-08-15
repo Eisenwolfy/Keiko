@@ -3,8 +3,8 @@ Personal Local AI Agent
 
 
 ----------------
-##Architecture##
-----------------
+Architecture
+
 personal-agent/
 │
 ├── app/
