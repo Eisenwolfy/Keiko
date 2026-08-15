@@ -6,7 +6,8 @@ Personal Local AI Agent
 Architecture
 ----------------
 
-personal-agent/
+
+]personal-agent/
 │
 ├── app/
 │   ├── main.py
