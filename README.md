@@ -4,6 +4,7 @@ Personal Local AI Agent
 
 ----------------
 Architecture
+----------------
 
 personal-agent/
 │
