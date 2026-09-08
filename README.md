@@ -1,5 +1,5 @@
 # Keiko
-Keiko - local personal ai agent based on Ollama.
+Local AI assistant with voice and gesture control — talk to it, show it gestures, control your PC hands-free
 
 
 ----------------
