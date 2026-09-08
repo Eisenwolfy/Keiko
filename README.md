@@ -11,21 +11,16 @@ The project is in process
 Future architecture
 --------
 
+```
 keiko/
-|
-|--- main.py
-|
-|
-|---core/
-|   |-- kernal.py
-|   |-- events.py
-|   |-- state.py
-|   |-- orchestrator.py
-
-
-
-
-
+│
+├── main.py
+│
+├── core/
+│   ├── __init__.py
+│   ├── events.py
+│   ├── state.py
+│   └── orchestrator.py
 │
 ├── voice/
 │   ├── __init__.py
@@ -61,3 +56,4 @@ keiko/
 │   └── documents/
 │
 └── config.py
+```
