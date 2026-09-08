@@ -14,45 +14,39 @@ Future architecture
 ```
 keiko/
 │
-├── main.py
+|-- main.py
 │
-├── core/
-│   ├── events.py
-│   ├── state.py
-│   └── orchestrator.py
+|-- core/
+│   |-- events.py
+│   |--state.py
+│   |-- orchestrator.py
 │
-├── voice/
-│   ├── __init__.py
-│   ├── wakeword.py
-│   ├── stt.py
-│   └── tts.py
+|-- voice/
+│   |-- wakeword.py
+│   |-- stt.py
+│   |-- tts.py
 │
-├── gestures/
-│   ├── __init__.py
-│   ├── tracker.py
-│   ├── classifier.py
-│   └── custom.py
+|-- gestures/
+│   |-- tracker.py
+│   |-- classifier.py
+│   |--custom.py
 │
-├── tools/
-│   ├── __init__.py
-│   ├── apps.py
-│   └── screenshot.py
+|-- tools/
+│   |-- apps.py
+│   |-- screenshot.py
 │
-├── llm/
-│   ├── __init__.py
-│   └── client.py
+|-- llm/
+│   |-- client.py
 │
-├── rag/
-│   ├── __init__.py
-│   └── search.py
+|-- rag/
+│   |-- search.py
 │
-├── ui/
-│   ├── __init__.py
-│   └── overlay.py
+|-- ui/
+│   |-- overlay.py
 │
-├── data/
-│   ├── gestures/
-│   └── documents/
+|--data/
+│   |-- gestures/
+│   |-- documents/
 │
-└── config.py
+|-- config.py
 ```
