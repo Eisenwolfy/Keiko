@@ -16,8 +16,8 @@ keiko/
 │
 |-- main.py
 │
-|-- core/
-│   |-- events.py
+|-- core/ (ready)
+│   |-- events.py 
 │   |--state.py
 │   |-- orchestrator.py
 │
