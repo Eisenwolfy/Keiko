@@ -3,7 +3,7 @@ Local AI assistant with voice and gesture control — talk to it, show it gestur
 
 
 ----------------
-The project is in process
+⚠️ The project is in process ⚠️
 ----------------
 
 
