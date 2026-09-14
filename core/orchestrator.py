@@ -1,16 +1,17 @@
 import asyncio
 import logging
+from ollama import AsyncClient
 from state import Session, State, ProcessingStage
-from events import Event
+from events import Event, TextEvent
 
 logger = logging.getLogger("orchestrator")
-
 
 class Orchestrator:
     def __init__(self, sessions: dict[str, Session] | None = None):
         self.state = State(ProcessingStage.IDLE)
         self.sessions = sessions if sessions is not None else {}
         self._lock = asyncio.Lock()
+        self._client = AsyncClient()
 
     async def handle_event(self, event: Event) -> None:
         try:
@@ -35,8 +36,13 @@ class Orchestrator:
                 self.state.active_session = session
                 return
 
-        # TODO: LLM call — not ready yet
         await self._to_llm(event)
 
     async def _to_llm(self, event: Event) -> None:
-        logger.info(f"to LLM: {event}")
+        text = getattr(event, "text", None)
+        if text is None:
+            return
+        messages = [{"role" : "user", "content": text}]
+        response = await self._client.chat(model='gemma3n:e4b', messages = messages)
+        print(response['message']['content'])
+        return response["message"]["content"]
